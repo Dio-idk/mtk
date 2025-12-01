@@ -1,315 +1,309 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <meta charset="utf-8">
-  <title>Latihan Soal MTK</title>
-  <style>
-    body { font-family: Arial; max-width: 700px; margin:auto; padding:20px; }
-    .soal { margin-bottom: 20px; }
-    h2 { text-align:center; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Latihan Soal Matematika</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        background: #f6f6f6;
+    }
+    .card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+    }
+    h2, h3 { margin-top: 0; }
+    button {
+        padding: 10px 20px;
+        background: #4285f4;
+        border: none;
+        color: white;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    textarea { width: 100%; }
+</style>
 </head>
 <body>
 
 <h2>Latihan Soal Matematika</h2>
+<p>Silakan isi semua jawaban dengan teliti.</p>
 
-<form id="quizForm">
+<form id="formMTK">
 
-  <label><b>Nama:</b></label><br>
-  <input type="text" id="nama" required style="width:100%; padding:6px;"><br><br>
 
-  <!-- ======================== PG 1 - 30 ======================== -->
+<div class="card">
+<h3>Pilihan Ganda (30 Soal)</h3>
 
-  <div class="soal">
-    <p><b>1.</b> Sebuah layang-layang memiliki diagonal 12 cm dan 20 cm. Berapa luasnya?</p>
-    <input type="radio" name="pg1" value="A"> A. 60 cm²<br>
-    <input type="radio" name="pg1" value="B"> B. 100 cm²<br>
-    <input type="radio" name="pg1" value="C"> C. 120 cm²<br>
-    <input type="radio" name="pg1" value="D"> D. 240 cm²<br>
-  </div>
+<p>1. Sebuah layang-layang memiliki diagonal 12 cm dan 20 cm. Berapa luasnya?</p>
+<label><input type="radio" name="pg1" value="A"> 60 cm²</label><br>
+<label><input type="radio" name="pg1" value="B"> 100 cm²</label><br>
+<label><input type="radio" name="pg1" value="C"> 120 cm²</label><br>
+<label><input type="radio" name="pg1" value="D"> 240 cm²</label><br>
 
-  <div class="soal">
-    <p><b>2.</b> Sebuah belah ketupat memiliki luas 96 cm² dan diagonal 12 cm. Berapa diagonal satunya?</p>
-    <input type="radio" name="pg2" value="A"> A. 8 cm<br>
-    <input type="radio" name="pg2" value="B"> B. 12 cm<br>
-    <input type="radio" name="pg2" value="C"> C. 16 cm<br>
-    <input type="radio" name="pg2" value="D"> D. 20 cm<br>
-  </div>
+<p>2. Sebuah belah ketupat memiliki luas 96 cm² dan diagonal 12 cm. Berapa diagonal satunya?</p>
+<label><input type="radio" name="pg2" value="A"> 8 cm</label><br>
+<label><input type="radio" name="pg2" value="B"> 12 cm</label><br>
+<label><input type="radio" name="pg2" value="C"> 16 cm</label><br>
+<label><input type="radio" name="pg2" value="D"> 20 cm</label><br>
 
-  <div class="soal">
-    <p><b>3.</b> Sebidang tanah berbentuk trapesium memiliki sisi sejajar 10 m dan 18 m, serta tinggi 6 m. Luas tanah tersebut adalah…</p>
-    <input type="radio" name="pg3" value="A"> A. 48 m²<br>
-    <input type="radio" name="pg3" value="B"> B. 72 m²<br>
-    <input type="radio" name="pg3" value="C"> C. 84 m²<br>
-    <input type="radio" name="pg3" value="D"> D. 96 m²<br>
-  </div>
+<p>3. Sebidang tanah berbentuk trapesium memiliki sisi sejajar 10 m dan 18 m, serta tinggi 6 m. Luasnya adalah…</p>
+<label><input type="radio" name="pg3" value="A"> 48 m²</label><br>
+<label><input type="radio" name="pg3" value="B"> 72 m²</label><br>
+<label><input type="radio" name="pg3" value="C"> 84 m²</label><br>
+<label><input type="radio" name="pg3" value="D"> 96 m²</label><br>
 
-  <div class="soal">
-    <p><b>4.</b> Luas permukaan sebuah kubus adalah 150 cm². Berapa panjang rusuknya?</p>
-    <input type="radio" name="pg4" value="A"> A. 4 cm<br>
-    <input type="radio" name="pg4" value="B"> B. 5 cm<br>
-    <input type="radio" name="pg4" value="C"> C. 6 cm<br>
-    <input type="radio" name="pg4" value="D"> D. 8 cm<br>
-  </div>
+<p>4. Luas permukaan sebuah kubus adalah 150 cm². Panjang rusuknya?</p>
+<label><input type="radio" name="pg4" value="A"> 4 cm</label><br>
+<label><input type="radio" name="pg4" value="B"> 5 cm</label><br>
+<label><input type="radio" name="pg4" value="C"> 6 cm</label><br>
+<label><input type="radio" name="pg4" value="D"> 8 cm</label><br>
 
-  <div class="soal">
-    <p><b>5.</b> Sebuah kotak kado berbentuk kubus memiliki rusuk 9 cm. Volume kotak tersebut adalah…</p>
-    <input type="radio" name="pg5" value="A"> A. 81 cm³<br>
-    <input type="radio" name="pg5" value="B"> B. 162 cm³<br>
-    <input type="radio" name="pg5" value="C"> C. 729 cm³<br>
-    <input type="radio" name="pg5" value="D"> D. 900 cm³<br>
-  </div>
+<p>5. Kubus rusuk 9 cm. Volumenya adalah…</p>
+<label><input type="radio" name="pg5" value="A"> 81 cm³</label><br>
+<label><input type="radio" name="pg5" value="B"> 162 cm³</label><br>
+<label><input type="radio" name="pg5" value="C"> 729 cm³</label><br>
+<label><input type="radio" name="pg5" value="D"> 900 cm³</label><br>
 
-  <div class="soal">
-    <p><b>6.</b> Bak mandi berbentuk balok berukuran 80 cm × 50 cm × 40 cm. Volume bak adalah…</p>
-    <input type="radio" name="pg6" value="A"> A. 16.000 cm³<br>
-    <input type="radio" name="pg6" value="B"> B. 80.000 cm³<br>
-    <input type="radio" name="pg6" value="C"> C. 160.000 cm³<br>
-    <input type="radio" name="pg6" value="D"> D. 400.000 cm³<br>
-  </div>
+<p>6. Bak mandi 80×50×40 cm. Volumenya?</p>
+<label><input type="radio" name="pg6" value="A"> 16.000 cm³</label><br>
+<label><input type="radio" name="pg6" value="B"> 80.000 cm³</label><br>
+<label><input type="radio" name="pg6" value="C"> 160.000 cm³</label><br>
+<label><input type="radio" name="pg6" value="D"> 400.000 cm³</label><br>
 
-  <div class="soal">
-    <p><b>7.</b> Manakah gambar berikut yang merupakan jaring-jaring limas segi empat?</p>
-    <input type="radio" name="pg7" value="A"> A<br>
-    <input type="radio" name="pg7" value="B"> B<br>
-    <input type="radio" name="pg7" value="C"> C<br>
-    <input type="radio" name="pg7" value="D"> D<br>
-  </div>
+<p>7. Jaring-jaring limas segi empat?</p>
+<label><input type="radio" name="pg7" value="A"> 4 segitiga + 1 persegi</label><br>
+<label><input type="radio" name="pg7" value="B"> 2 segitiga + 2 persegi</label><br>
+<label><input type="radio" name="pg7" value="C"> 4 persegi + 1 segitiga</label><br>
+<label><input type="radio" name="pg7" value="D"> 5 segitiga</label><br>
 
-  <div class="soal">
-    <p><b>8.</b> Limas segi empat memiliki alas 10 cm × 8 cm dan tinggi 9 cm. Volumenya adalah…</p>
-    <input type="radio" name="pg8" value="A"> A. 120 cm³<br>
-    <input type="radio" name="pg8" value="B"> B. 180 cm³<br>
-    <input type="radio" name="pg8" value="C"> C. 240 cm³<br>
-    <input type="radio" name="pg8" value="D"> D. 480 cm³<br>
-  </div>
+<p>8. Limas alas 10×8, tinggi 9. Volumenya…</p>
+<label><input type="radio" name="pg8" value="A"> 120 cm³</label><br>
+<label><input type="radio" name="pg8" value="B"> 180 cm³</label><br>
+<label><input type="radio" name="pg8" value="C"> 240 cm³</label><br>
+<label><input type="radio" name="pg8" value="D"> 480 cm³</label><br>
 
-  <div class="soal">
-    <p><b>9.</b> Yang termasuk jaring-jaring prisma segitiga adalah…</p>
-    <input type="radio" name="pg9" value="A"> A<br>
-    <input type="radio" name="pg9" value="B"> B<br>
-    <input type="radio" name="pg9" value="C"> C<br>
-    <input type="radio" name="pg9" value="D"> D<br>
-  </div>
+<p>9. Jaring-jaring prisma segitiga adalah…</p>
+<label><input type="radio" name="pg9" value="A"> 1 persegi + 4 segitiga</label><br>
+<label><input type="radio" name="pg9" value="B"> 2 segitiga + 3 persegi panjang</label><br>
+<label><input type="radio" name="pg9" value="C"> 3 persegi + 3 segitiga</label><br>
+<label><input type="radio" name="pg9" value="D"> 1 lingkaran + 1 persegi panjang</label><br>
 
-  <div class="soal">
-    <p><b>10.</b> Sebuah tenda berbentuk prisma segitiga membutuhkan kain untuk menutup seluruh permukaannya. Ini berarti kita menghitung…</p>
-    <input type="radio" name="pg10" value="A"> A. Volume prisma<br>
-    <input type="radio" name="pg10" value="B"> B. Keliling alas prisma<br>
-    <input type="radio" name="pg10" value="C"> C. Luas permukaan prisma<br>
-    <input type="radio" name="pg10" value="D"> D. Luas alas prisma<br>
-  </div>
+<p>10. Tenda berbentuk prisma segitiga membutuhkan…</p>
+<label><input type="radio" name="pg10" value="A"> Volume prisma</label><br>
+<label><input type="radio" name="pg10" value="B"> Keliling alas</label><br>
+<label><input type="radio" name="pg10" value="C"> Luas permukaan prisma</label><br>
+<label><input type="radio" name="pg10" value="D"> Luas alas</label><br>
 
-  <!-- ======================== Relasi & Fungsi ======================== -->
+<!-- ===== RELASI & FUNGSI ===== -->
 
-  <div class="soal">
-    <p><b>11.</b> Yang bukan merupakan ciri-ciri fungsi adalah…</p>
-    <input type="radio" name="pg11" value="A"> A<br>
-    <input type="radio" name="pg11" value="B"> B<br>
-    <input type="radio" name="pg11" value="C"> C<br>
-    <input type="radio" name="pg11" value="D"> D<br>
-  </div>
+<p>11. Yang bukan ciri fungsi adalah…</p>
+<label><input type="radio" name="pg11" value="A"> Setiap domain punya pasangan</label><br>
+<label><input type="radio" name="pg11" value="B"> Domain bisa punya >1 pasangan</label><br>
+<label><input type="radio" name="pg11" value="C"> Tidak boleh ada domain tanpa pasangan</label><br>
+<label><input type="radio" name="pg11" value="D"> Setiap domain hanya 1 pasangan</label><br>
 
-  <div class="soal">
-    <p><b>12.</b> Domain dari relasi A → B jika A={1,2,3} B={4,5} adalah…</p>
-    <input type="radio" name="pg12" value="A"> A<br>
-    <input type="radio" name="pg12" value="B"> B<br>
-    <input type="radio" name="pg12" value="C"> C<br>
-    <input type="radio" name="pg12" value="D"> D<br>
-  </div>
+<p>12. Domain dari relasi A={1,2,3} → B={4,5} adalah…</p>
+<label><input type="radio" name="pg12" value="A"> {1,2,3}</label><br>
+<label><input type="radio" name="pg12" value="B"> {4,5}</label><br>
+<label><input type="radio" name="pg12" value="C"> {1,4}</label><br>
+<label><input type="radio" name="pg12" value="D"> {3,5}</label><br>
 
-  <div class="soal">
-    <p><b>13.</b> Jika range bilangan bulat −2 sampai 2, himpunannya adalah…</p>
-    <input type="radio" name="pg13" value="A"> A<br>
-    <input type="radio" name="pg13" value="B"> B<br>
-    <input type="radio" name="pg13" value="C"> C<br>
-    <input type="radio" name="pg13" value="D"> D<br>
-  </div>
+<p>13. Range bilangan bulat −2 sampai 2 adalah…</p>
+<label><input type="radio" name="pg13" value="A"> {−3,−2,−1,0,1,2}</label><br>
+<label><input type="radio" name="pg13" value="B"> {−2,−1,0,1,2}</label><br>
+<label><input type="radio" name="pg13" value="C"> {−2,−1,1,2}</label><br>
+<label><input type="radio" name="pg13" value="D"> {0,1,2}</label><br>
 
-  <div class="soal">
-    <p><b>14.</b> Cara menyajikan relasi pasangan berurutan adalah…</p>
-    <input type="radio" name="pg14" value="A"> A<br>
-    <input type="radio" name="pg14" value="B"> B<br>
-    <input type="radio" name="pg14" value="C"> C<br>
-    <input type="radio" name="pg14" value="D"> D<br>
-  </div>
+<p>14. Cara menyajikan relasi pasangan (x,y)…</p>
+<label><input type="radio" name="pg14" value="A"> Diagram batang</label><br>
+<label><input type="radio" name="pg14" value="B"> Diagram panah</label><br>
+<label><input type="radio" name="pg14" value="C"> Himpunan pasangan</label><br>
+<label><input type="radio" name="pg14" value="D"> Tabel frekuensi</label><br>
 
-  <div class="soal">
-    <p><b>15.</b> Yang termasuk fungsi adalah…</p>
-    <input type="radio" name="pg15" value="A"> A<br>
-    <input type="radio" name="pg15" value="B"> B<br>
-    <input type="radio" name="pg15" value="C"> C<br>
-    <input type="radio" name="pg15" value="D"> D<br>
-  </div>
+<p>15. Yang termasuk fungsi adalah…</p>
+<label><input type="radio" name="pg15" value="A"> x→{1,2}</label><br>
+<label><input type="radio" name="pg15" value="B"> 1→2, 1→3</label><br>
+<label><input type="radio" name="pg15" value="C"> 3→5, 4→6</label><br>
+<label><input type="radio" name="pg15" value="D"> 2→7, 2→8</label><br>
 
-  <div class="soal">
-    <p><b>16.</b> Tabel: x=1,2,3 → y=3,6,9. Rumus fungsi?</p>
-    <input type="radio" name="pg16" value="A"> A<br>
-    <input type="radio" name="pg16" value="B"> B<br>
-    <input type="radio" name="pg16" value="C"> C<br>
-    <input type="radio" name="pg16" value="D"> D<br>
-  </div>
+<p>16. Tabel (1→3, 2→6, 3→9). Rumus fungsi?</p>
+<label><input type="radio" name="pg16" value="A"> y = 2x</label><br>
+<label><input type="radio" name="pg16" value="B"> y = 3x</label><br>
+<label><input type="radio" name="pg16" value="C"> y = x+3</label><br>
+<label><input type="radio" name="pg16" value="D"> y = x²</label><br>
 
-  <div class="soal">
-    <p><b>17.</b> Banyak kemungkinan pemetaan A={1,2} ke B={3,4,5} adalah…</p>
-    <input type="radio" name="pg17" value="A"> A<br>
-    <input type="radio" name="pg17" value="B"> B<br>
-    <input type="radio" name="pg17" value="C"> C<br>
-    <input type="radio" name="pg17" value="D"> D<br>
-  </div>
+<p>17. Banyak pemetaan A={1,2} → B={3,4,5} adalah…</p>
+<label><input type="radio" name="pg17" value="A"> 3</label><br>
+<label><input type="radio" name="pg17" value="B"> 6</label><br>
+<label><input type="radio" name="pg17" value="C"> 9</label><br>
+<label><input type="radio" name="pg17" value="D"> 12</label><br>
 
-  <div class="soal">
-    <p><b>18.</b> Banyak fungsi dari A={1,2,3} ke B={7,8} adalah…</p>
-    <input type="radio" name="pg18" value="A"> A<br>
-    <input type="radio" name="pg18" value="B"> B<br>
-    <input type="radio" name="pg18" value="C"> C<br>
-    <input type="radio" name="pg18" value="D"> D<br>
-  </div>
+<p>18. Banyak fungsi A={1,2,3} → B={7,8} adalah…</p>
+<label><input type="radio" name="pg18" value="A"> 4</label><br>
+<label><input type="radio" name="pg18" value="B"> 6</label><br>
+<label><input type="radio" name="pg18" value="C"> 8</label><br>
+<label><input type="radio" name="pg18" value="D"> 16</label><br>
 
-  <div class="soal">
-    <p><b>19.</b> Jika f(x)=3x−2, maka f(5) adalah…</p>
-    <input type="radio" name="pg19" value="A"> A<br>
-    <input type="radio" name="pg19" value="B"> B<br>
-    <input type="radio" name="pg19" value="C"> C<br>
-    <input type="radio" name="pg19" value="D"> D<br>
-  </div>
+<p>19. f(x)=3x−2, f(5)=…</p>
+<label><input type="radio" name="pg19" value="A"> 10</label><br>
+<label><input type="radio" name="pg19" value="B"> 13</label><br>
+<label><input type="radio" name="pg19" value="C"> 15</label><br>
+<label><input type="radio" name="pg19" value="D"> 17</label><br>
 
-  <div class="soal">
-    <p><b>20.</b> Perubahan nilai f(x)=x²−4x dari x=2 ke x=5…</p>
-    <input type="radio" name="pg20" value="A"> A<br>
-    <input type="radio" name="pg20" value="B"> B<br>
-    <input type="radio" name="pg20" value="C"> C<br>
-    <input type="radio" name="pg20" value="D"> D<br>
-  </div>
+<p>20. Perubahan f(x)=x²−4x dari x=2 ke x=5?</p>
+<label><input type="radio" name="pg20" value="A"> 9</label><br>
+<label><input type="radio" name="pg20" value="B"> 15</label><br>
+<label><input type="radio" name="pg20" value="C"> 19</label><br>
+<label><input type="radio" name="pg20" value="D"> 21</label><br>
 
-  <!-- ======================== Persamaan Garis Lurus ======================== -->
+<!-- ===== PERSAMAAN GARIS ===== -->
 
-  <div class="soal">
-    <p><b>21.</b> y=2x−3 melalui titik…</p>
-    <input type="radio" name="pg21" value="A"> A<br>
-    <input type="radio" name="pg21" value="B"> B<br>
-    <input type="radio" name="pg21" value="C"> C<br>
-    <input type="radio" name="pg21" value="D"> D<br>
-  </div>
+<p>21. y=2x−3 melewati titik…</p>
+<label><input type="radio" name="pg21" value="A"> (0,−3)</label><br>
+<label><input type="radio" name="pg21" value="B"> (2,2)</label><br>
+<label><input type="radio" name="pg21" value="C"> (0,2)</label><br>
+<label><input type="radio" name="pg21" value="D"> (3,3)</label><br>
 
-  <div class="soal">
-    <p><b>22.</b> Gradien titik (1,2) dan (5,10)…</p>
-    <input type="radio" name="pg22" value="A"> A<br>
-    <input type="radio" name="pg22" value="B"> B<br>
-    <input type="radio" name="pg22" value="C"> C<br>
-    <input type="radio" name="pg22" value="D"> D<br>
-  </div>
+<p>22. Gradien titik (1,2) dan (5,10)…</p>
+<label><input type="radio" name="pg22" value="A"> 1</label><br>
+<label><input type="radio" name="pg22" value="B"> 2</label><br>
+<label><input type="radio" name="pg22" value="C"> 3</label><br>
+<label><input type="radio" name="pg22" value="D"> 4</label><br>
 
-  <div class="soal">
-    <p><b>23.</b> Gradien dari 3y − 6x = 9 adalah…</p>
-    <input type="radio" name="pg23" value="A"> A<br>
-    <input type="radio" name="pg23" value="B"> B<br>
-    <input type="radio" name="pg23" value="C"> C<br>
-    <input type="radio" name="pg23" value="D"> D<br>
-  </div>
+<p>23. 3y−6x=9 → gradien…</p>
+<label><input type="radio" name="pg23" value="A"> 1</label><br>
+<label><input type="radio" name="pg23" value="B"> 2</label><br>
+<label><input type="radio" name="pg23" value="C"> −2</label><br>
+<label><input type="radio" name="pg23" value="D"> 3</label><br>
 
-  <div class="soal">
-    <p><b>24.</b> Garis menanjak berarti gradien…</p>
-    <input type="radio" name="pg24" value="A"> A<br>
-    <input type="radio" name="pg24" value="B"> B<br>
-    <input type="radio" name="pg24" value="C"> C<br>
-    <input type="radio" name="pg24" value="D"> D<br>
-  </div>
+<p>24. Grafik menanjak → gradien…</p>
+<label><input type="radio" name="pg24" value="A"> 0</label><br>
+<label><input type="radio" name="pg24" value="B"> negatif</label><br>
+<label><input type="radio" name="pg24" value="C"> positif</label><br>
+<label><input type="radio" name="pg24" value="D"> tidak ada</label><br>
 
-  <div class="soal">
-    <p><b>25.</b> Gradien (0,0) ke (8,4)…</p>
-    <input type="radio" name="pg25" value="A"> A<br>
-    <input type="radio" name="pg25" value="B"> B<br>
-    <input type="radio" name="pg25" value="C"> C<br>
-    <input type="radio" name="pg25" value="D"> D<br>
-  </div>
+<p>25. Gradien (0,0) ke (8,4)…</p>
+<label><input type="radio" name="pg25" value="A"> 1/4</label><br>
+<label><input type="radio" name="pg25" value="B"> 1/2</label><br>
+<label><input type="radio" name="pg25" value="C"> 2</label><br>
+<label><input type="radio" name="pg25" value="D"> 4</label><br>
 
-  <div class="soal">
-    <p><b>26.</b> Garis (0,0) dan (3,6)…</p>
-    <input type="radio" name="pg26" value="A"> A<br>
-    <input type="radio" name="pg26" value="B"> B<br>
-    <input type="radio" name="pg26" value="C"> C<br>
-    <input type="radio" name="pg26" value="D"> D<br>
-  </div>
+<p>26. Garis (0,0) & (3,6)…</p>
+<label><input type="radio" name="pg26" value="A"> y=x</label><br>
+<label><input type="radio" name="pg26" value="B"> y=2x</label><br>
+<label><input type="radio" name="pg26" value="C"> y=3x</label><br>
+<label><input type="radio" name="pg26" value="D"> y=6x</label><br>
 
-  <div class="soal">
-    <p><b>27.</b> Garis (2,4) dan (6,12)…</p>
-    <input type="radio" name="pg27" value="A"> A<br>
-    <input type="radio" name="pg27" value="B"> B<br>
-    <input type="radio" name="pg27" value="C"> C<br>
-    <input type="radio" name="pg27" value="D"> D<br>
-  </div>
+<p>27. Garis (2,4) & (6,12)…</p>
+<label><input type="radio" name="pg27" value="A"> y=2x</label><br>
+<label><input type="radio" name="pg27" value="B"> y=x+2</label><br>
+<label><input type="radio" name="pg27" value="C"> y=3x−2</label><br>
+<label><input type="radio" name="pg27" value="D"> y=4x</label><br>
 
-  <div class="soal">
-    <p><b>28.</b> Gradien 5 melalui (1,3)…</p>
-    <input type="radio" name="pg28" value="A"> A<br>
-    <input type="radio" name="pg28" value="B"> B<br>
-    <input type="radio" name="pg28" value="C"> C<br>
-    <input type="radio" name="pg28" value="D"> D<br>
-  </div>
+<p>28. Gradien 5 melalui (1,3)…</p>
+<label><input type="radio" name="pg28" value="A"> y=5x−2</label><br>
+<label><input type="radio" name="pg28" value="B"> y=5x+3</label><br>
+<label><input type="radio" name="pg28" value="C"> y=5x+1</label><br>
+<label><input type="radio" name="pg28" value="D"> y=5x−3</label><br>
 
-  <div class="soal">
-    <p><b>29.</b> Garis sejajar 2x−y+4=0 gradien…</p>
-    <input type="radio" name="pg29" value="A"> A<br>
-    <input type="radio" name="pg29" value="B"> B<br>
-    <input type="radio" name="pg29" value="C"> C<br>
-    <input type="radio" name="pg29" value="D"> D<br>
-  </div>
+<p>29. Garis sejajar 2x−y+4=0 memiliki gradien…</p>
+<label><input type="radio" name="pg29" value="A"> 1/2</label><br>
+<label><input type="radio" name="pg29" value="B"> −2</label><br>
+<label><input type="radio" name="pg29" value="C"> 2</label><br>
+<label><input type="radio" name="pg29" value="D"> −1/2</label><br>
 
-  <div class="soal">
-    <p><b>30.</b> Garis 3x+y−7=0 tegak lurus garis gradien…</p>
-    <input type="radio" name="pg30" value="A"> A<br>
-    <input type="radio" name="pg30" value="B"> B<br>
-    <input type="radio" name="pg30" value="C"> C<br>
-    <input type="radio" name="pg30" value="D"> D<br>
-  </div>
+<p>30. Garis 3x+y−7=0 tegak lurus garis dengan gradien…</p>
+<label><input type="radio" name="pg30" value="A"> −3</label><br>
+<label><input type="radio" name="pg30" value="B"> 1/3</label><br>
+<label><input type="radio" name="pg30" value="C"> 3</label><br>
+<label><input type="radio" name="pg30" value="D"> −1/3</label><br>
 
-  <!-- ======================== ESSAI 1 - 5 ======================== -->
+</div>
 
-  <h3>Soal Esai</h3>
 
-  <label>Esai 1:</label>
-  <textarea name="esai1" style="width:100%; height:80px;"></textarea><br><br>
+<!-- (lanjutan semua soal PG 4–30, gue siap lanjutin kalau lu mau ALL-in di sini) -->
 
-  <label>Esai 2:</label>
-  <textarea name="esai2" style="width:100%; height:80px;"></textarea><br><br>
+</div>
 
-  <label>Esai 3:</label>
-  <textarea name="esai3" style="width:100%; height:80px;"></textarea><br><br>
+<div class="card">
+<h3>Esai (5 Soal)</h3>
 
-  <label>Esai 4:</label>
-  <textarea name="esai4" style="width:100%; height:80px;"></textarea><br><br>
+<p>1. Sebuah prisma segitiga memiliki alas segitiga bersisi 6 cm, tinggi segitiga 4 cm, dan panjang 10 cm. Hitung luas permukaannya!</p>
+<textarea name="esai1" rows="4"></textarea><br><br>
 
-  <label>Esai 5:</label>
-  <textarea name="esai5" style="width:100%; height:80px;"></textarea><br><br>
+<p>2. Diketahui fungsi f(x) = 2x + 5. Tentukan range untuk domain {1,3,5}.</p>
+<textarea name="esai2" rows="4"></textarea><br><br>
 
-  <button type="submit">Kirim Jawaban</button>
+<p>3. Jika f(x) = x² − 3x, hitung perubahan dari x = 2 ke x = 7.</p>
+<textarea name="esai3" rows="4"></textarea><br><br>
 
+<p>4. Tentukan persamaan garis melalui (4,7) dengan gradien 3.</p>
+<textarea name="esai4" rows="4"></textarea><br><br>
+
+<p>5. Tentukan persamaan garis melalui (2,−1) dan sejajar 4x − 2y + 6 = 0.</p>
+<textarea name="esai5" rows="4"></textarea>
+</div>
+
+<button type="button" onclick="submitForm()">Kirim</button>
 </form>
 
-<div id="hasil"></div>
+<div id="hasil" class="card" style="display:none;"></div>
 
 <script>
-  const scriptURL = "https://script.google.com/macros/s/AKfycbwFXyV8G1O6DueHiYgN4wDrv6wZ1mSVe1jSc8m50aCgq5OfHcBJ7UWSHzmO0Zj7yE80/exec";
+// ===== KUNCI PG =====
+const kunci = {
+  pg1:"C", pg2:"C", pg3:"D",
+  pg4:"B", pg5:"C", pg6:"C",
+  pg7:"A", pg8:"B", pg9:"B", pg10:"C",
+  pg11:"B", pg12:"A", pg13:"B", pg14:"C", pg15:"C",
+  pg16:"B", pg17:"C", pg18:"C", pg19:"B", pg20:"A",
+  pg21:"A", pg22:"D", pg23:"C", pg24:"C", pg25:"B",
+  pg26:"B", pg27:"A", pg28:"A", pg29:"C", pg30:"B"
+};
 
-  document.getElementById("quizForm").addEventListener("submit", async (e) => {
-    e.preventDefault();
+function submitForm() {
 
-    const form = new FormData();
-    form.append("nama", document.getElementById("nama").value);
+  let score = 0;
 
-    for (let i = 1; i <= 30; i++) {
-      const val = document.querySelector(`input[name="pg${i}"]:checked`);
-      form.append(`pg${i}`, val ? val.value : "");
-    }
+  for (let i=1; i<=30; i++){
+    let nama = "pg" + i;
+    let pilih = document.querySelector(`input[name="${nama}"]:checked`);
+    if (pilih && pilih.value === kunci[nama]) score++;
+  }
 
-    for (let i = 1; i <= 5; i++) {
-      form.append(`esai${i}`, document.querySelector(`textarea[name="esai${i}"]`).value);
-    }
+  let esai1 = document.querySelector("[name='esai1']").value;
+  let esai2 = document.querySelector("[name='esai2']").value;
+  let esai3 = document.querySelector("[name='esai3']").value;
+  let esai4 = document.querySelector("[name='esai4']").value;
+  let esai5 = document.querySelector("[name='esai5']").value;
 
-    await fetch(scriptURL, { method: "POST", body: form });
-    document.getElementById("hasil").innerHTML = "<b>Jawaban berhasil dikirim!</b>";
+  // ====== KIRIM KE GOOGLE SHEETS ======
+  fetch("YOUR_GOOGLE_SCRIPT_URL_HERE", {
+    method: "POST",
+    mode: "no-cors",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({
+        nilai_pg: score,
+        esai1, esai2, esai3, esai4, esai5
+    })
   });
+
+  document.getElementById("hasil").style.display = "block";
+  document.getElementById("hasil").innerHTML = `
+    <h3>Hasil</h3>
+    Nilai pilihan ganda: <b>${score}/30</b><br>
+    Jawaban esai sudah tersimpan.
+  `;
+}
 </script>
 
 </body>
